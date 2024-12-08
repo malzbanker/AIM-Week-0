@@ -10,30 +10,54 @@ import os
 
 print(os.getcwd())
 
-df = pd.read_csv('benin-malanville.csv')
+dfb = pd.read_csv('benin-malanville.csv')
+dfs = pd.read_csv('sierraleone-bumbuna.csv')
+dft = pd.read_csv('togo-dapaong_qc.csv')
 
-# Displaying the DataFrame
-print(df)
+# Displaying the DataFrame for benin
+print(dfb)
 
-print(df.head())
+print(dfb.head())
 
-print(df.describe())
+print(dfb.describe())
 
-# Displaying data frame information
-print(df.info())
+# Displaying data frame information for benin
+print(dfb.info())
 
-# Displaying the null data
-print(df.isnull().sum())
+# Displaying the null data for benin
+print(dfb.isnull().sum())
+
+#data for sierralion
+
+# Displaying the DataFrame for sierralion
+print(dfs)
+
+print(dfs.head())
+
+print(dfs.describe())
+
+# Displaying data frame information for sierralion
+print(dfs.info())
+
+# Displaying the null data for sierralion
+print(dfs.isnull().sum())
 
 
-# print(sns.boxplot(x='DNI', y='GHI', data=df))
-# print(plt.title('GHI VS DNI'))
-# print(plt.show())
-
-# print(df.columns)
-
-# # Create the boxplot
+#data for togo
 
 
-# # Display the plot
-# plt.show()
+# Displaying the DataFrame for togo
+print(dft)
+
+print(dft.head())
+
+print(dft.describe())
+
+# Displaying data frame information for togo
+print(dft.info())
+
+# Displaying the null data for togo
+print(dft.isnull().sum())
+
+
+
